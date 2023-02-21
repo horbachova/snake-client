@@ -15,6 +15,10 @@ const connect = function() {
     conn.write("Name: YAH");
   });
 
+  //   setInterval(() => {
+  //     conn.write("Move: up");
+  //   }, 500);
+
   conn.on("data", (data) => {
     console.log(data); //handling incoming data
   });
